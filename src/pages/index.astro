@@ -1,6 +1,12 @@
 ---
+import '../styles/global.css';
+
 const pageTitle = "Poukong's First Astro Website";
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
 ---
+
+<!-- CAN I Put an HTML COMMENT HERE -->
 
 <html lang="en">
 	<head>
@@ -12,10 +18,10 @@ const pageTitle = "Poukong's First Astro Website";
 	</head>
 	<body>
 
-		<a href="/">Home</a>
-        <a href="/about/">About</a>
-        <a href="/blog/">Blog</a>
+		<Navigation />
 		
 		<h1>{pageTitle}</h1>
+
+		<Footer />
 	</body>
 </html>
